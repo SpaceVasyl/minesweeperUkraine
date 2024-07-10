@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cell.classList.add('revealed');
         if (document.querySelectorAll('.cell.revealed').length === width * height - mineCount) {
             gameOver = true;
-            setTimeout(() => showMessage('Це перемога!'), 2000);
+            setTimeout(() => showMessage('Це перемога! З днем народження!'), 2000);
         }
     }
 
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 cell.classList.add('revealed');
             }
         });
-        setTimeout(() => showMessage('Це зрада!'), 2000);
+        setTimeout(() => showMessage('На жаль, ти програла... Але вітаю з днем народження!!!'), 2000);
     }
 
     createBoard();
